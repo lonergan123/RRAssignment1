@@ -1,13 +1,7 @@
-# Reproducible Research - Assignment 1
-Kevin Lonergan  
-October 18th, 2014  
-
-
-
+# "Reproducible Research - Assignment 1"
 This report answers a variety of questions from data associated with a personal activity monitoring device. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
 ## Loading and preprocessing the data
-
 
 First, read the data file. Note that, as per assignment instructions, the file is not actaully downloaded.
 
@@ -32,7 +26,7 @@ Histogram:
 hist(activity1$sum_steps, main="Steps Per Day Histogram", xlab="# of steps")
 ```
 
-![plot of chunk unnamed-chunk-3](./PA1_template_files/figure-html/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
 
 Table:
 
@@ -50,7 +44,7 @@ Time series plot:
 plot(activity2$interval, activity2$average, type="l", xlab="Time (5 min interval)", ylab="Average daily # of steps")
 ```
 
-![plot of chunk unnamed-chunk-5](./PA1_template_files/figure-html/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
 
 ```r
 max_interval <- activity2$interval[which.max(activity2$average)]
@@ -78,7 +72,7 @@ Now, generate another histogram:
 hist(activity1$sum_steps, main="Steps Per Day Histogram", xlab="# of steps")
 ```
 
-![plot of chunk unnamed-chunk-8](./PA1_template_files/figure-html/unnamed-chunk-8.png) 
+![plot of chunk unnamed-chunk-8](figure/unnamed-chunk-8.png) 
 
 Table:
 
@@ -104,4 +98,4 @@ library(lattice)
 xyplot(average ~ interval | weekday,data = activity2, layout=c(1,2),type="l", xlab="Time (5 min interval)", ylab="Average daily # of steps")
 ```
 
-![plot of chunk unnamed-chunk-11](./PA1_template_files/figure-html/unnamed-chunk-11.png) 
+![plot of chunk unnamed-chunk-11](figure/unnamed-chunk-11.png) 

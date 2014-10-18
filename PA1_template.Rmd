@@ -1,18 +1,7 @@
----
-title: "Reproducible Research - Assignment 1"
-author: "Kevin Lonergan"
-date: "October 18th, 2014"
-output:
-  html_document:
-    keep_md: true
----
-
-
-
+# "Reproducible Research - Assignment 1"
 This report answers a variety of questions from data associated with a personal activity monitoring device. The data consists of two months of data from an anonymous individual collected during the months of October and November, 2012 and include the number of steps taken in 5 minute intervals each day.
 
 ## Loading and preprocessing the data
-
 
 First, read the data file. Note that, as per assignment instructions, the file is not actaully downloaded.
 
